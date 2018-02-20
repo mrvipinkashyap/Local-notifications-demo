@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="notificationForm">
+    <h1>Reminder</h1>  
+   
+
+    <ion-item>
+      <!-- <ion-input type="number" placeholder="Id" formControlName="id"></ion-input> -->
+      Click on send button to send local notification in next 3 seconds
+    </ion-item>
+   
+    <button ion-button (click)="submit()" > Send</button>
+  </form>
+</ion-content>
