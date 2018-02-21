@@ -31,6 +31,7 @@ export class HomePage {
         id: Math.floor(Math.random() * 10000),
         title: 'My first notification',
         trigger: {at: (new Date().getTime() + 3600)},
+        foreground:true
       }
     );
   }
