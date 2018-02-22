@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular';
+import { NavController, Platform, IonicPage } from 'ionic-angular';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import * as moment from 'moment';
 declare var cordova;
 
+@IonicPage({
+  priority: 'high'
+})
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
